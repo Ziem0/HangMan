@@ -11,14 +11,14 @@ import java.util.List;
 import java.util.TreeMap;
 
 public class DataReader {
-    ArrayList<String> CAPITALS = new ArrayList<>();
-    TreeMap<String, String> BOX = new TreeMap<>();
+    static ArrayList<String> CAPITALS = new ArrayList<>();
+    static TreeMap<String, String> BOX = new TreeMap<>();
 
     /**
      * Read data from file and add capitals to CAPITALS and add countries as a key and capitals as an value in BOX
      * @param fileName csv file
      */
-    private void Reader(String fileName) {
+    private static void Reader(String fileName) {
         FileReader fr = null;
         BufferedReader bfr;
         String line = "";
@@ -42,6 +42,27 @@ public class DataReader {
         }
     }
 
+    /**
+     * Choose the range of data depending on the level
+     * @param level string; user choice
+     * @see DataReader#Reader
+     */
+    public static void addWordsByLevel(String level) {
+        String europe = "src/resources/europe.csv";
+        String americas = "src/resources/americas.csv";
+        String africa = "src/resources/africa.csv";
 
-
+        switch (level) {
+            case "easy":
+                break;
+            case "medium":
+                Reader(americas);
+                break;
+            case "hard":
+                Reader(americas);
+                Reader(africa);
+                break;
+        }
+        Reader(europe);
+    }
 }
