@@ -28,7 +28,7 @@ public abstract class LevelZero {
         return words.get(randomIndex);
     }
 
-    public String inputLevel() {
+    public static String inputLevel() {
         String level = UI.userLevel();
         switch (level) {
             case "1":
