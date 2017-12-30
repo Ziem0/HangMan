@@ -6,5 +6,9 @@ public class InputController {
         return name.matches("[a-zA-Z]{3,}");
     }
 
+    public static boolean levelIsValid(String level) {
+        return level.matches("[1-3]");
+    }
+
 
 }

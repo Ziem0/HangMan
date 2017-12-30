@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.TreeMap;
 
 public class DataReader {
-    static ArrayList<String> CAPITALS = new ArrayList<>();
-    static TreeMap<String, String> BOX = new TreeMap<>();
+    public static ArrayList<String> CAPITALS = new ArrayList<>();
+    public static TreeMap<String, String> BOX = new TreeMap<>();
 
     /**
      * Read data from file and add capitals to CAPITALS and add countries as a key and capitals as an value in BOX
