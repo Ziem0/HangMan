@@ -6,24 +6,24 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class LevelZero {
-    static ArrayList<String> words = new ArrayList<>();
-    static String word;
-    static Integer life;
+    public static ArrayList<String> words = new ArrayList<>();
+    public static String word;
+    public static Integer life;
 
 
     public Integer getLife() {
         return life;
     }
 
-    public String getWord() {
-        return word;
-    }
+//    public String getWord() {
+//        return word;
+//    }
 
     public void setLife() {
         --life;
     }
 
-    public String getRandomWord() {
+    public static String getRandomWord() {
         int randomIndex = new Random().nextInt(words.size());
         return words.get(randomIndex);
     }
