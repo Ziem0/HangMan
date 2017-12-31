@@ -24,6 +24,9 @@ public class UI {
         return level;
     }
 
+    public static void print(Object input) {
+        System.out.println(input);
+    }
 
 
 }
