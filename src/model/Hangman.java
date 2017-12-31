@@ -12,8 +12,8 @@ public class Hangman {
     public Integer life;
 
     public Hangman(LevelZero level) {
-        this.word = word;
-        this.life = life;
+        this.word = level.word;
+        this.life = level.life;
     }
 
     public String dashes() {
@@ -26,4 +26,17 @@ public class Hangman {
         return String.join("", this.usedLetters);
     }
 
+    public String niceFormForUsedLetters() {
+        this.usedLetters.sort(String::compareToIgnoreCase);
+        return String.join(", ", usedLetters);
+    }
+
+    public void addLetterToUsedLetter(String letter) {
+        this.usedLetters.add(letter.toUpperCase());
+    }
+
+    public Integer decreaseLife() {
+        --this.life;
+        return this.life;
+    }
 }

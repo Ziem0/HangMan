@@ -19,7 +19,7 @@ public abstract class LevelZero {
 //        return word;
 //    }
 
-    public void setLife() {
+    public void decreaseLife() {
         --life;
     }
 
