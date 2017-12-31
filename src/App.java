@@ -37,5 +37,6 @@ public class App {
         LevelZero level = createLevel();
         App game = new App(player, level);
 
+        System.out.println("Asd");
     }
 }

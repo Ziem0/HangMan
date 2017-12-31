@@ -23,6 +23,7 @@ public class Hangman {
     }
 
     private String getUsedLettersInStringForm() {
-        return String.join("",this.usedLetters);
+        return String.join("", this.usedLetters);
     }
+
 }
