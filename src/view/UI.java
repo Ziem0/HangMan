@@ -28,5 +28,8 @@ public class UI {
         System.out.println(input);
     }
 
+    public static void clear() {
+        System.out.flush();
+    }
 
 }

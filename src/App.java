@@ -5,6 +5,7 @@ import controller.InputController;
 import view.UI;
 
 public class App {
+    boolean isContinue = true;
     Player player;
     LevelZero level;
     Hangman hangman;
@@ -16,6 +17,7 @@ public class App {
     }
 
     private static LevelZero createLevel() {
+
         LevelZero level = null;
         String userLevel = LevelZero.inputLevel();
         switch (userLevel) {
@@ -32,11 +34,20 @@ public class App {
         return level;
     }
 
+    public void gameLoop() {
+
+    }
+
     public static void main(String[] args) {
+        if (args.length > 0 && args[0].equals("cheat")) {
+
+        }
+        UI.clear();
         Player player = Player.addPlayer();
         LevelZero level = createLevel();
         App game = new App(player, level);
-
-        System.out.println("Asd");
+        while (game.isContinue) {
+            game.gameLoop();
+        }
     }
 }
