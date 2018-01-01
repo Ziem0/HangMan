@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 
 public class Hangman {
-    public ArrayList<String> usedLetters = new ArrayList<>();
+    private ArrayList<String> usedLetters = new ArrayList<>();
     public String word;
     public Integer life;
 

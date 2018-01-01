@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 public class tryy {
     public static void main(String[] args) {
 
+        String w = "ziemod";
         ArrayList<String> lista = new ArrayList<>();
         {
             {
@@ -22,12 +23,11 @@ public class tryy {
 //        String used = String.join("", lista);
 //        Pattern p = Pattern.compile("[^" + used + "]");
 //        System.out.println(p.matcher(w).replaceAll("-"));
-
+//
 //        lista.sort(String::compareToIgnoreCase);
 //        Collections.sort(lista, String.CASE_INSENSITIVE_ORDER);
 //        System.out.println(String.join(", ", lista));
 
-        String w = "ziemod";
         Pattern p = Pattern.compile("[^"+"dupa"+"]");
         System.out.println(p.matcher(w).replaceAll("-"));
 //        jesli slowo nie zawiera liter z dupa - zastap "-"
