@@ -6,12 +6,12 @@ import controller.InputController;
 import view.UI;
 
 public class App {
-    static boolean isCheat = false;
-    static String ANSWER;
-    boolean isContinue = true;
-    Player player;
-    LevelZero level;
-    Hangman hangman;
+    private static boolean isCheat = false;
+    private static String ANSWER;
+    private boolean isContinue = true;
+    private Player player;
+    private LevelZero level;
+    private Hangman hangman;
 
     private App(Player player, LevelZero level) {
         this.player = player;
@@ -37,7 +37,7 @@ public class App {
         return level;
     }
 
-    public void gameLoop() {
+    private void gameLoop() {
         UI.clear();
         UI.print("Used letters: " + hangman.niceFormForUsedLetters());
         UI.print("you have "+ hangman.life + " life");
@@ -47,31 +47,34 @@ public class App {
         checkStatus();
     }
 
-    public void checkStatus() {
+    private void checkStatus() {
         if (hangman.life.equals(0)) {
             lostGame();
         } else if (InputController.finalAnswer(hangman.word, ANSWER)) {
             winGame();
-        } else if () {
+        } else if (!hangman.dashes().contains("-")) {
+            winGame();
         }
     }
 
-    public void winGame() {
+    private void winGame() {
         UI.print("Hey " + player.getName() + "! You won this game!\nYou're master of programming xd");
+        this.isContinue = false;
     }
 
-    public void lostGame() {
+    private void lostGame() {
         UI.print("Hey " + player.getName() + "! You lost this game!\nYou're dead man xd");
+        this.isContinue = false;
     }
 
-    public void getTip() {
+    private void getTip() {
         if (hangman.life < 2) {
             String country = DataReader.BOX.get(hangman.word);
             UI.print("This is a capital of " + country);
         }
     }
 
-    public void chooseLetter() {
+    private void chooseLetter() {
         String letter = "";
         letter = UI.guessLetter();
         hangman.addLetterToUsedLetter(letter);
@@ -83,7 +86,7 @@ public class App {
         }
     }
 
-    public void chooseWord() {
+    private void chooseWord() {
         ANSWER = UI.guessWord();
         if (!ANSWER.equals(hangman.word)) {
             hangman.decreaseLife();
@@ -91,7 +94,7 @@ public class App {
         }
     }
 
-    public void chooseAction() {
+    private void chooseAction() {
         String action = UI.chooseWordOrLetter();
         if (action.equals("1")) {
             chooseWord();
@@ -99,6 +102,8 @@ public class App {
             chooseLetter();
         }
     }
+
+
 
     public static void main(String[] args) {
         if (args.length > 0 && args[0].equals("cheat")) {
@@ -111,6 +116,8 @@ public class App {
         App game = new App(player, level);
         while (game.isContinue) {
             game.gameLoop();
+            System.exit(0);
+
         }
     }
 }

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faaf1020-9b88-4676-b161-96b1da08219a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/App.java" afterPath="$PROJECT_DIR$/src/App.java" />
-      <change beforePath="$PROJECT_DIR$/src/controller/InputController.java" afterPath="$PROJECT_DIR$/src/controller/InputController.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DataReader.java" afterPath="$PROJECT_DIR$/src/dao/DataReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/Hangman.java" afterPath="$PROJECT_DIR$/src/model/Hangman.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/tryy.java" afterPath="$PROJECT_DIR$/src/model/tryy.java" />
-      <change beforePath="$PROJECT_DIR$/src/view/UI.java" afterPath="$PROJECT_DIR$/src/view/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,27 +65,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#App#0;class#App#0" expanded="false" />
                 <element signature="method#createLevel#0;class#App#0" expanded="false" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1694#1695#0" expanded="true" />
+                <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+                <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+                <element signature="method#winGame#0;class#App#0" expanded="false" />
+                <element signature="method#lostGame#0;class#App#0" expanded="false" />
+                <element signature="method#getTip#0;class#App#0" expanded="false" />
+                <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+                <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+                <element signature="method#chooseAction#0;class#App#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hangman.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hangman.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="227">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
@@ -196,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/model/Hangman.java" />
         <option value="$PROJECT_DIR$/src/dao/DataReader.java" />
         <option value="$PROJECT_DIR$/src/controller/InputController.java" />
-        <option value="$PROJECT_DIR$/src/App.java" />
         <option value="$PROJECT_DIR$/src/view/UI.java" />
+        <option value="$PROJECT_DIR$/src/App.java" />
       </list>
     </option>
   </component>
@@ -507,12 +507,12 @@
       <workItem from="1514641039795" duration="4555000" />
       <workItem from="1514726470807" duration="617000" />
       <workItem from="1514727129095" duration="14189000" />
-      <workItem from="1514817579653" duration="7939000" />
+      <workItem from="1514817579653" duration="8674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33755000" />
+    <option name="totallyTimeSpent" value="34490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="-11" width="1329" height="780" extended-state="6" />
@@ -569,8 +569,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+            <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+            <element signature="method#winGame#0;class#App#0" expanded="false" />
+            <element signature="method#lostGame#0;class#App#0" expanded="false" />
+            <element signature="method#getTip#0;class#App#0" expanded="false" />
+            <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+            <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+            <element signature="method#chooseAction#0;class#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -693,8 +699,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+            <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+            <element signature="method#winGame#0;class#App#0" expanded="false" />
+            <element signature="method#lostGame#0;class#App#0" expanded="false" />
+            <element signature="method#getTip#0;class#App#0" expanded="false" />
+            <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+            <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+            <element signature="method#chooseAction#0;class#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,8 +829,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+            <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+            <element signature="method#winGame#0;class#App#0" expanded="false" />
+            <element signature="method#lostGame#0;class#App#0" expanded="false" />
+            <element signature="method#getTip#0;class#App#0" expanded="false" />
+            <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+            <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+            <element signature="method#chooseAction#0;class#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -941,8 +959,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+            <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+            <element signature="method#winGame#0;class#App#0" expanded="false" />
+            <element signature="method#lostGame#0;class#App#0" expanded="false" />
+            <element signature="method#getTip#0;class#App#0" expanded="false" />
+            <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+            <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+            <element signature="method#chooseAction#0;class#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1137,20 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#App#0;class#App#0" expanded="false" />
-            <element signature="method#createLevel#0;class#App#0" expanded="false" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/tryy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1163,14 +1173,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="227">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
             <element signature="e#673#674#0" expanded="true" />
             <element signature="e#888#889#0" expanded="true" />
             <element signature="e#946#947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#App#0;class#App#0" expanded="false" />
+            <element signature="method#createLevel#0;class#App#0" expanded="false" />
+            <element signature="method#gameLoop#0;class#App#0" expanded="false" />
+            <element signature="method#checkStatus#0;class#App#0" expanded="false" />
+            <element signature="method#winGame#0;class#App#0" expanded="false" />
+            <element signature="method#lostGame#0;class#App#0" expanded="false" />
+            <element signature="method#getTip#0;class#App#0" expanded="false" />
+            <element signature="method#chooseLetter#0;class#App#0" expanded="false" />
+            <element signature="method#chooseWord#0;class#App#0" expanded="false" />
+            <element signature="method#chooseAction#0;class#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
