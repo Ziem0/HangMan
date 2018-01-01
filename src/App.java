@@ -6,7 +6,7 @@ import controller.InputController;
 import view.UI;
 
 public class App {
-    private static boolean isCheat = false;
+    private static boolean isCheat = true;
     private static String ANSWER;
     private boolean isContinue = true;
     private Player player;
@@ -39,12 +39,19 @@ public class App {
 
     private void gameLoop() {
         UI.clear();
+        showCheat();
         UI.print("Used letters: " + hangman.niceFormForUsedLetters());
         UI.print("you have "+ hangman.life + " life");
         UI.print(hangman.dashes());
         getTip();
         chooseAction();
         checkStatus();
+    }
+
+    private void showCheat() {
+        if (isCheat) {
+            UI.print(hangman.word);
+        }
     }
 
     private void checkStatus() {
@@ -116,8 +123,7 @@ public class App {
         App game = new App(player, level);
         while (game.isContinue) {
             game.gameLoop();
-            System.exit(0);
-
         }
+        System.exit(0);
     }
 }
