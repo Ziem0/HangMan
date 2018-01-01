@@ -2,6 +2,7 @@ package view;
 
 import java.util.Scanner;
 import controller.InputController;
+import jdk.internal.util.xml.impl.Input;
 
 public class UI {
     static Scanner data = new Scanner(System.in);
@@ -32,4 +33,32 @@ public class UI {
         System.out.flush();
     }
 
+    public static String guessLetter() {
+        String letter = "";
+        do {
+            print("Choose a letter: ");
+            letter = data.next().toUpperCase();
+        } while (!InputController.letterIsValid(letter));
+        return letter;
+    }
+
+    public static String guessWord() {
+        String word = "";
+        do {
+            print("Choose capital: ");
+            word = data.next().toUpperCase();
+        } while (!InputController.wordIsValid(word));
+        return word;
+    }
+
+
+    public static String chooseWordOrLetter() {
+        String action = "";
+        do {
+            print("You wanna guess word(1) or letter(2)? ");
+            action = data.next();
+        } while (!InputController.actionIsValid(action));
+        return action;
+
+    }
 }

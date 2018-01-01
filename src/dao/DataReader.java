@@ -33,7 +33,7 @@ public class DataReader {
         try {
             while ((line = bfr.readLine()) != null) {
                 List<String> lineList = Arrays.asList(line.split(","));
-                BOX.put(lineList.get(0), lineList.get(1));
+                BOX.put(lineList.get(1), lineList.get(0));
                 CAPITALS.add(lineList.get(1));
             }
         } catch (IOException e) {
