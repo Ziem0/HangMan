@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faaf1020-9b88-4676-b161-96b1da08219a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/HangMan/model/Hangman.class" afterPath="$PROJECT_DIR$/out/production/HangMan/model/Hangman.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HangMan/model/tryy.class" afterPath="$PROJECT_DIR$/out/production/HangMan/model/tryy.class" />
-      <change beforePath="$PROJECT_DIR$/src/model/Hangman.java" afterPath="$PROJECT_DIR$/src/model/Hangman.java" />
-      <change beforePath="$PROJECT_DIR$/src/model/tryy.java" afterPath="$PROJECT_DIR$/src/model/tryy.java" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" afterPath="$PROJECT_DIR$/src/App.java" />
+      <change beforePath="$PROJECT_DIR$/src/view/UI.java" afterPath="$PROJECT_DIR$/src/view/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +33,8 @@
       <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="method#userName#0;class#UI#0" expanded="false" />
                 <element signature="method#userLevel#0;class#UI#0" expanded="false" />
@@ -52,9 +49,10 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#App#0;class#App#0" expanded="false" />
                 <element signature="method#createLevel#0;class#App#0" expanded="false" />
                 <element signature="method#gameLoop#0;class#App#0" expanded="false" />
@@ -188,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/model/level/Easy.java" />
         <option value="$PROJECT_DIR$/src/dao/DataReader.java" />
         <option value="$PROJECT_DIR$/src/controller/InputController.java" />
-        <option value="$PROJECT_DIR$/src/view/UI.java" />
-        <option value="$PROJECT_DIR$/src/App.java" />
         <option value="$PROJECT_DIR$/src/model/Hangman.java" />
         <option value="$PROJECT_DIR$/src/model/tryy.java" />
         <option value="$PROJECT_DIR$/src/model/level/LevelZero.java" />
+        <option value="$PROJECT_DIR$/src/view/UI.java" />
+        <option value="$PROJECT_DIR$/src/App.java" />
       </list>
     </option>
   </component>
@@ -509,12 +507,12 @@
       <workItem from="1514641039795" duration="4555000" />
       <workItem from="1514726470807" duration="617000" />
       <workItem from="1514727129095" duration="14189000" />
-      <workItem from="1514817579653" duration="9905000" />
+      <workItem from="1514817579653" duration="10200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35721000" />
+    <option name="totallyTimeSpent" value="36016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="-11" width="1329" height="780" extended-state="6" />
@@ -568,6 +566,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
             <element signature="method#gameLoop#0;class#App#0" expanded="false" />
@@ -702,6 +701,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
             <element signature="method#gameLoop#0;class#App#0" expanded="false" />
@@ -836,6 +836,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
             <element signature="method#gameLoop#0;class#App#0" expanded="false" />
@@ -970,6 +971,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
             <element signature="method#gameLoop#0;class#App#0" expanded="false" />
@@ -1101,19 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/DataReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="docComment;method#Reader#0;class#DataReader#0" expanded="false" />
-            <element signature="method#Reader#0;class#DataReader#0" expanded="false" />
-            <element signature="docComment;method#addWordsByLevel#0;class#DataReader#0" expanded="false" />
-            <element signature="method#addWordsByLevel#0;class#DataReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/level/Hard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1175,6 +1164,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/DataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="docComment;method#Reader#0;class#DataReader#0" expanded="false" />
+            <element signature="method#Reader#0;class#DataReader#0" expanded="false" />
+            <element signature="docComment;method#addWordsByLevel#0;class#DataReader#0" expanded="false" />
+            <element signature="method#addWordsByLevel#0;class#DataReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1191,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="method#userName#0;class#UI#0" expanded="false" />
             <element signature="method#userLevel#0;class#UI#0" expanded="false" />
@@ -1205,9 +1207,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#App#0;class#App#0" expanded="false" />
             <element signature="method#createLevel#0;class#App#0" expanded="false" />
             <element signature="method#gameLoop#0;class#App#0" expanded="false" />
